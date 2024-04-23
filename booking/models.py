@@ -21,7 +21,7 @@ class Booking(models.Model):
     """
     booking_date = models.DateField()
     booking_time = models.TimeField()
-    no_of_persons = models.IntegerField(default=1)
+    number_accompanying = models.IntegerField(default=1)
     booking_status = models.IntegerField(choices=BOOKING_STATUS, default=0)
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE, null=True, blank=True)
 

@@ -11,8 +11,8 @@ def limit_no_persons(date, time, accompanying):
     persons_limit = False
     unavailable = Booking.objects.filter(booking_status=1,
                                          booking_date=date, booking_time=time)
-    total_persons = unavailable.aggregate(Sum('number_accompanying '))[
-        'number_ accompanying __sum']
+    total_persons = unavailable.aggregate(Sum('number_accompanying'))[
+        'number_accompanying__sum']
     if total_persons is None:
         total_persons = 0
     if total_persons + accompanying <= 10:
@@ -24,14 +24,13 @@ def limit_no_persons(date, time, accompanying):
 
 def unavailable_dates():
     """
-     
       the function executes the action when the restaurant is fully booked with confirmed bookings
       for that particular date/time
     """
     confirmed_bookings = Booking.objects.filter(booking_status=1)
     bookings_max_Persons = confirmed_bookings.values(
         'booking_date').annotate(
-            attendees=Sum('number_accompanying')).filter(persons=200)
+            persons=Sum('number_accompanying')).filter(persons=200)
     unavailable_dates = [booking['booking_date']
                          for booking in bookings_max_persons]
     return unavailable_dates
@@ -42,7 +41,7 @@ def check_availability(date, time):
     unavailable = Booking.objects.filter(
         booking_date=date, booking_time=time, booking_status=1)
     available = True
-    total_persons = unavailable.aggregate(Sum('number_accompanying '))[
+    total_persons = unavailable.aggregate(Sum('number_accompanying'))[
         'number_accompanying__sum']
     if unavailable.exists() and total_persons >= 10:
         available = False
