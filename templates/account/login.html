@@ -3,32 +3,31 @@
 {% load i18n %}
 {% load account socialaccount %}
 
-{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block head_title %}
+{% trans "Sign In" %}
+{% endblock %}
 
-{% block content %}
+{% block details %}
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
-            <h3>{% trans "Sign In" %}</h3>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-9 col-md-7 col-lg-5 col-xl-4 access-form text-center shadow">
+            <!-- link for sign in or sign up for new customer -->
+            <h3 class="pt-2"></h3>>{% trans "Sign In" %}</h3>
 
-            <p>{% blocktrans %}Welcome back to the code|star blog. To leave a comment or like a post, please log in. If
-                you
-                have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
+            <p class="access-form-smalltxt">{% blocktrans %}Welcome back to Our Booking-Page. To book or view, please log in. If
+                you have not created an account yet, please <a href="{{ signup_url }}">sign up</a>
                 first.{% endblocktrans %}</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
+            <!-- Sign-in Form -->
             <form class="login" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
-            </form>
+                <button class="btn btn-light primaryAction mb-3" type="submit">{% trans "Sign In" %}</button>
+            </form>     
         </div>
     </div>
-</div>
+<div>       
 {% endblock %}
