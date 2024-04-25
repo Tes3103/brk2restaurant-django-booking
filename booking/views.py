@@ -86,7 +86,7 @@ def customer_booking(request):
         'unavailable_dates': unavailable_booking_dates,
     }
 
-    return render(request, 'booking.html', context)
+    return render(request, 'make_booking.html', context)
 
 
 def display_booking(request):
@@ -105,8 +105,7 @@ def edit_booking(request, booking_id, customer_id):
     """
     Edit booking function will display a pre filled form for a
     specific booking of the users choosing and allows this booking
-    to be edited. Help with securing the url:
-    https://www.codu.co/articles/securing-django-views-from-unauthorized-access-npyb3to_
+    to be edited.
     """
     unavailable_booking_dates = []
     booking = get_object_or_404(Booking, id=booking_id)
