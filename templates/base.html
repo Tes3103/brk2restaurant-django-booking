@@ -32,12 +32,13 @@
 
     {% include 'includes/header.html' %}
 
-    <main>
-        {% block content %}
-        <!-- Content Goes here -->
-        {% endblock content %}
+    {% block header %}
+    {% endblock %}
 
-    </main>
+    {% block content%}
+    
+    {% endblock %}
+
 
     {% include 'includes/footer.html' %}
 

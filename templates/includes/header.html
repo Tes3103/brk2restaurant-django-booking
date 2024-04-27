@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <header>
     {% with request.resolver_match.url_name as url_name %}
@@ -27,11 +28,11 @@
                 
                 <li class="nav-item d-md-none bg-light-subtle rounded">
                     <a class="nav-link" href="{% url 'account_login' %}" aria-label="Navigates to the home page">Bookings</a>
-               </li>
+                </li>
 
                <li class="nav-item d-md-none bg-light-subtle rounded">
                    <a class="nav-link" href="{% url 'account_login' %}" aria-label="Navigates to the home page">Bookings</a>     
-               </li>
+               </li> 
 
             </ul>
          </div>
