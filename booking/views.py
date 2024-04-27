@@ -28,7 +28,7 @@ def unavailable_dates():
       for that particular date/time
     """
     confirmed_bookings = Booking.objects.filter(booking_status=1)
-    bookings_max_Persons = confirmed_bookings.values(
+    bookings_max_persons = confirmed_bookings.values(
         'booking_date').annotate(
             persons=Sum('number_accompanying')).filter(persons=200)
     unavailable_dates = [booking['booking_date']
