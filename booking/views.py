@@ -86,7 +86,7 @@ def customer_booking(request):
         'unavailable_dates': unavailable_booking_dates,
     }
 
-    return render(request, 'make_booking.html', context)
+    return render(request, 'booking.html', context)
 
 
 def display_booking(request):
