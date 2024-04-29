@@ -1,34 +1,29 @@
-{% extends "base.html" %}
-
-{% load i18n %}
-{% load account socialaccount %}
-
-{% block head_title %}
-{% trans "Sign In" %}
-{% endblock %}
-
-{% block content %}
-{% load crispy_forms_tags %}
-
-<div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="col-9 col-md-7 col-lg-5 col-xl-4 access-form text-center shadow">
-            <!-- link for sign in or sign up for new customer -->
-            <h3 class="pt-2"></h3>>{% trans "Sign In" %}</h3>
-
-            <p class="access-form-smalltxt">{% blocktrans %}Welcome back to Our Booking-Page. To book or view, please log in. If
-                you have not created an account yet, please <a href="{{ signup_url }}">sign up</a>
-                first.{% endblocktrans %}</p>
-            <!-- Sign-in Form -->
-            <form class="login" method="POST" action="{% url 'account_login' %}">
-                {% csrf_token %}
-                {{ form | crispy }}
-                {% if redirect_field_value %}
-                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-                {% endif %}
-                <button class="btn btn-light primaryAction mb-3" type="submit">{% trans "Sign In" %}</button>
-            </form>     
+{% extends "../base.html" %} {% load i18n %} {% load account socialaccount %}
+{%block head_title %}{% trans "Sign In" %}{% endblock %} {% block content %} {% load crispy_forms_tags %}
+<!-- Sign up link if user not registered -->
+<section class="container">
+    <div class="row">
+        <div class="col-sm-12 center-form">
+            <h1>{% trans "Sign In" %}</h1>
+                <p>{% blocktrans %}If you have not created an account yet, then please
+                    <a class="link" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
+                </p>     
         </div>
     </div>
-<div>       
-{% endblock %}
+</section>
+<!-- login form -->
+<section class="container">
+    <div class="row">
+        <div class="col-sm-12 center-form">
+            <form class="login" method="POST" action="{% url 'account_login' %}" id="signin-form">
+                {% csrf_token %} {{ form | crispy }} {% if redirect_field_value %}
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+                    {% endif %}
+                    <button class="primaryAction btn btn-lg submit-button" type="submit">
+                        {% trans "Sign In" %}
+                    </button>
+            </form>
+        </div>
+    </div>
+</section>
+  {% endblock %}

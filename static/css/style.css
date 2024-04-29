@@ -86,6 +86,12 @@ body {
     border: 2px solid;
 }
 
+/* Links */
+.link {
+    color: #916b56;
+    text-decoration: none;
+}
+
 /* Home Page */
 #index-splash {
     margin-top: 1.5em;
