@@ -70,21 +70,29 @@ body {
 }
 
 .btn-light {
-    color: black;
+    color: white;
     background-color: whitesmoke;
 }
 
 .btn-light:hover,
 .btn-dark:hover {
     color: ghostwhite;
-    background-color: darkslategrey;
-    border-color: darkslategrey;
+    background-color: brown;
+    border-color: brown;
 }
 
 .navbar-toggler {
     margin-top: -0.5em;
     margin-right: 0.5em;
     border: 2px solid;
+}
+
+/* Submit buttons */
+.submit-button {
+    background-color: brown;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
 }
 
 /* Links */
@@ -200,12 +208,6 @@ body {
     width: 100%;
 }
 
-.profile-icon {
-    margin-left: 10px;
-    font-size: 110%;
-    color: #2B4570;
-}
-
 td > a {
     text-decoration: none;
 }
@@ -264,7 +266,7 @@ td > a {
 
 .booking-form {
     color: ghostwhite;
-    border: 0.5em solid gainsboro;
+    border: 0.5em solid #A37A74;
     margin-top: 0.2rem;
 }
 
