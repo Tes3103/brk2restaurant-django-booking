@@ -12,8 +12,7 @@ class CustomerForm(forms.ModelForm):
 class BookingForm(forms.ModelForm):
     """
     Booking form set up. It includes the widgets for the
-    datepicker and timepicker.Reference:
-    https://stackoverflow.com/questions/61077802/how-to-use-a-datepicker-in-a-modelform-in-django
+    datepicker and timepicker.
     """
     class Meta:
         model = Booking
