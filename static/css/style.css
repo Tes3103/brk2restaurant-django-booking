@@ -28,6 +28,7 @@ body,
 }
 
 body {
+    background: url("https://res.cloudinary.com/dkcc61vm0/image/upload/v1713865689/main-background3_b6mljq.jpg");
     background-color: #b8794f;
     background-size: cover;
     min-height: 110vh;
