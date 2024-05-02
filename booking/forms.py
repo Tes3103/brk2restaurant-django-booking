@@ -1,7 +1,6 @@
-from .models import Customer, Booking, User
 from django import forms
 from django.forms.widgets import DateInput, TimeInput
-
+from .models import Customer, Booking, User
 
 class CustomerForm(forms.ModelForm):
     class Meta:

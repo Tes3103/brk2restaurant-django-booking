@@ -1,8 +1,7 @@
 from django.shortcuts import render, reverse
-from .forms import ContactForm
-from django.contrib import messages
-
 from django.http import HttpResponseRedirect
+from django.contrib import messages
+from .forms import ContactForm
 
 
 def home(request):

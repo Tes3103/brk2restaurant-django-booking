@@ -1,9 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-from .forms import CustomerForm, BookingForm, UserForm
-from django.contrib.auth.models import User
-from .models import Booking, Customer
 from django.db.models import Sum
 from django.contrib import messages
+from django.contrib.auth.models import User
+from .models import Booking, Customer
+from .forms import CustomerForm, BookingForm, UserForm
 
 
 def limit_no_persons(date, time, accompanying):
