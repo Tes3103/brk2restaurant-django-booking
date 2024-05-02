@@ -203,7 +203,23 @@ Instagram link clickable|Clicked the Instagram icon|When clicked the Instagram i
 Facebook link clickable|Clicked the Facebook icon|When clicked the Facebook icon will open a new window to Facebook|Pass
 Footer responsive|Resized the browser and checked the footer at different resolutions|Footer will fit the samll screen size|Pass
 
+## Validator Testing
 
+HTML
+
+![html-valid](static/images/readme/contact-final-deployed.png)
+
+CSS
+
+![css-valid](static/images/readme/css-valid.png)
+
+Lighthouse Testing
+
+![LH-valid](static/images/readme/LH-valid.png)
+
+CI Python Linter
+
+![]()
 
 
 
