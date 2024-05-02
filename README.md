@@ -1,111 +1,101 @@
 #  BrK2-Restaurant
-Brk2-Restaurant is an imaginary Restaurant created for the Purpose of creating a full functioning Booking app for the school project tollkit fullstack Django milestone Project.
+Brk2-Restaurant is an imaginary Restaurant based in Munich Germany created for the Purpose of creating a full functioning Booking app for the school project tollkit Full-Stuck Django milestone Project.
 
 This website displays information to the user such as opening times, Users are able to create an account on this website.Once a user is logged in they are able to make a request for a booking also able to edit or delete their booking by visiting their profile page. An authorized user can also edit the personal profile. The site also have the access for  managers to oversee the bookings of all users so that they can properly run the restaurant.
 
 A live version of the project can be accessed [here:](https://dashboard.heroku.com/apps/brk2restaurant-2024/deploy/github)
 
- **September 1, 2021**
+![Overview](static/images/readme/booking-site.png)
 
-## Gitpod Reminders
+ 
+## User Experiance Design
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Demographic
 
-`python3 -m http.server`
+This Site Targes Users who are:
 
-A blue button should appear to click: _Make Public_,
+* Looking for an international food taste
+* Forigners who live in Munich and miss their Original Tasete of Food
+* Turists from all over the world who are looking for an international experiance
 
-Another blue button should appear to click: _Open Browser_.
+## User Stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* As a User of this website I want to see a home page which give me a general information
+* As a user of this website I want to create an account so that i can have the access
+* As a User of This website I want to  have an access to book or reserve for my comming dates
+* As a User I want to see a conformation message so that my booking is accepted for further conformation
+* As a User of This website i want to Edit, and delete my booking Schedule
+* As a User of this Website I want to edit or delete my usser Profile Information
+* As an Admin Of the website i want to access all Bookings and arrange for further management
 
-A blue button should appear to click: _Make Public_,
+## Skeleton
 
-Another blue button should appear to click: _Open Browser_.
+## Wireframe
+Wireframe are used to give a visual feedback afer taking the general structure of the site and they also help as a remnder for the basic components of the site
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Home
 
-To log into the Heroku toolbelt CLI:
+![Home page wireframe](static/images/readme/wireframe-home.png)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Booking
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![Booking page wireframe](static/images/readme/wireframe-booking.png)
 
-------
+### Flowchart
 
-## Release History
+This flowchart was created to determine the flow of the website. It shows which pages are available to the user. It takes into account if the user is logged in to the website or not.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![website-flowchart](static/images/readme/website-flowchart.png)
 
-**September 20 2023:** Update Python version to 3.9.17.
+## Technologies used
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* *Django* - The Django framework was used to develop this application.
+* *Django AllAuth* - Used to create account, login and logout users of the site.
+* *Python* - This application was developed using Python.
+* *ElephantSQL* - was used to host the external database.
+* *HTML* - was used to develop the templates in this project.
+* *CSS* - was used to style the page by customizing it.
+* *Lucid chart* - Used to create the flowchart.
+* *Bootstrap* - was used for the fast development of the layout and styling
+* *Gitpod* - IDE used for the development of the  application.
+* *jQuery* - jQuery was used to develop the date and time pickers.
+* *GitHub* - The code for this application is stored on GitHub.
+* *Git* - Used for version control.
+* *Heroku* - Used for development.
+* *JavaScript* -
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Features
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Existing features
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Navigation bar
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![navbar](static/images/readme/nav-link.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* Links alter depending on which section of the site the user is accessing.
+* The navigation bar is seen on all pages of this booking site.
+* Navbar toggler appears at screen sizes of 746px or less to preserve well-formatted layout.
+* To the left hand side of the navigation bar the name and the logo for café-board can be seen. This logo is clickable and will return the user back to the home page.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Home Page
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![homepage-link](static/images/readme/homepage-link.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* A home page also displaying a quick link to the booking area of the site.
+* A home page with a background image displaying opening times of the restaurant.
+* A home page renders well for all screen sice media.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Contact Us Page
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Contact-us](static/images/readme/contactus-link.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
