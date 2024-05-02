@@ -73,6 +73,15 @@
 
     <script src="https://kit.fontawesome.com/5bd1105102.js" crossorigin="anonymous"></script>
 
+     <!-- JS Alert Auto-Dismiss -->
+    <script>
+        setTimeout(function () {
+            let messages = document.getElementById('message');
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+        }, 2000);
+    </script>
+
 </body>
 
 </html>
