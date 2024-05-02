@@ -107,7 +107,29 @@ This flowchart was created to determine the flow of the website. It shows which 
 
 * A user can sign in using a registerd credentials 
 * After the user sign in the user can book, visit the profile and able to perform edition and deletion 
+* A signd in User have the following Options
 
+![signdin](static/images/readme/signedin-link.png)
+
+### Booking Admin
+
+![admin](static/images/readme/admin-conformation.png)
+
+* An admin area only allowing access to the site admin
+* A link to the database to clearly display the details of each booking
+* Username and password details must be entered to gain access and able to manage booking
+
+![admin](static/images/readme/admin-booking-management.png)
+
+## Future features
+
+1. Adding a menu and gallary page
+2. Adding More interaction by implementing jS functionality
+3. Improving the booking steps by adding Pictures of the setting arrangement
+4. Automatic email notifications for admin when customers make bookings and notifications to customers when booking status is updated
+5. A forgotten password link
+
+## Testing
 
 
 
