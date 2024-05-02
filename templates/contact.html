@@ -1,39 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
-        <!-- Contact form container -->
-        
-            {% if name %}
-            
-            <h2 class="text-2xl md:text-3xl mb-2 font-title text-orange-600 text-center">
-                Thank you for reaching to us
-            </h2>
-            <p class="text-center">
-                Thank you for contacting us {{ name }}. We will get back to you soon.
-            </p>
-
-            {% else %}
-            <!-- Contact us form title and info -->
-            <div class="container">
-                <div id="index-splash" class="row justify-content-center text-light">
-                    <div id="text-column"
-                        class="col-9 col-md-7 col-lg-5 col-xl-4 bg-dark text-center border-top border-bottom border-end border-dark-subtle border-3">
-                        <div class="row">
-                            <div class="top-banner col pt-3 pb-2">
-                                <h1 class="text-3xl md:text-4xl mb-2 font-title text-brown-600">
-                                    Contact us
-                    
-                                </h1>
-                
-                                 <p>Your comments are appreciated!</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="opening-times col pt-2">
-                                <!-- Contact us form -->
-            <form action="{% url 'contact' %}" method="post" id="contact-form">
-                {% csrf_token %}
+<!-- Contact us form title and info -->
+<div class="container">
+    <div id="index-splash" class="row justify-content-center text-light">
+        <div id="text-column" class="col-9 col-md-7 col-lg-5 col-xl-4 bg-dark text-center border-top border-bottom border-end border-dark-subtle border-3">
+            <div class="row">
+                <div class="top-banner col pt-3 pb-2">
+                    <h1 class="text-3xl md:text-4xl mb-2 font-title text-brown-600">
+                    Contact Us
+                    </h1>
+                    <p>Your comments are appreciated!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="opening-times col pt-2">
+                    <!-- Contact us form -->
+                    <form action="{% url 'contact' %}" method="post" id="contact-form">
+                    {% csrf_token %}
                     <!-- User Input -->
                     <div class="mb-4 flex flex-col sm:flex-row">
                         <div class="mb-4">
@@ -77,14 +61,15 @@
                         maxlength="2500"
                         required></textarea>
                     </div>  
-                </form>
-            </div>
+                    </form>
+                </div>
             <div class="row">
                 <div class="bottom-banner col pt-3">
                     <button type="submit" class="btn btn-lg submit-button" aria-label="Submit booking">Submit</button>
                 </div>
             </div>
-         </div>    
-            {% endif %}
-    
+         </div>
+        </div>
+    </div>        
+</div>            
 {% endblock%}
