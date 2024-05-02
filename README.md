@@ -87,7 +87,29 @@ This flowchart was created to determine the flow of the website. It shows which 
 
 ### Contact Us Page
 
-![Contact-us](static/images/readme/contactus-link.png)
+![Contact-us](static/images/readme/contactus2-link.png)
+
+* The contact us link opens a form for the user to fill out.
+* The user is asked for their name, email and the message they would like to send.
+* The Booking admin adress all the issues rasied by the user as quickly as possible.
+
+### Register Page
+
+![register-link](static/images/readme/register-link.png)
+
+* This link allows a User to Sign up for the page and 
+* A registerd User has all the access for booking and additional previllages
+* A User is expected to fill all the required Fild and a conformation massage will show the Success.
+
+### Sign-in Page
+
+![signin-link](static/images/readme/signin-link.png)
+
+* A user can sign in using a registerd credentials 
+* After the user sign in the user can book, visit the profile and able to perform edition and deletion 
+
+
+
 
 
 
