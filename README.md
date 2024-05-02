@@ -219,7 +219,27 @@ Lighthouse Testing
 
 CI Python Linter
 
-![]()
+admin.py
+
+![admin](static/images/readme/admin-booking-management.png)
+
+forms.py
+
+![forms](static/images/readme/form-booking.png)
+
+model.py
+
+![model](static/images/readme/mod-booking.png)
+
+urls.py
+
+![urls](static/images/readme/url-booking.png)
+
+views.py
+
+![views](static/images/readme/view-booking.png)
+
+## Bugs
 
 
 
