@@ -131,6 +131,28 @@ This flowchart was created to determine the flow of the website. It shows which 
 
 ## Testing
 
+### Manual testing
+
+Each section of the website has been tested.Testing different devices and screen resolutions has been conducted using Google DevTools.
+
+#### Navigation Bar
+
+**Test**|**Action**|**Expected**|**Result**
+-----|-----|-----|:-----:
+Logo|Clicked logo|When the logo is clicked it will return the user to the home page|pass
+Home nav link|Clicked Home on the nav bar|When clicked it will direct the user to the home page|pass
+Contact-Us nav link|Clicked Contact-Us on the nav bar|When clicked it will direct the user to the Contact-us|Pass
+Register nav link|Clicked Register on the nav bar|When clicked it will direct the user to the sign up page|Pass
+Sign in nav link|Clicked Sign in on the nav bar|When clicked it will direct the user to the sign in page|Pass
+Nav menu responsive|Change the Device Size|When browser is resized the nav bar will remain responsive across all device sizes|Pass
+
+#### Contact Us
+
+**Test**|**Action**|**Expected**|**Result**
+-----|-----|-----|:-----:
+
+
+
 
 
 
