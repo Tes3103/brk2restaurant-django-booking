@@ -282,9 +282,14 @@ Profile page was not correctely rendered and visible|adding a background color a
 
 ### Code
 
-Credit for Daniel Conner for letting and providing basic booking model and form codes from his project 
+* Credit for Daniel Conner for letting and providing basic booking model and form codes from his project 
 
-Credit for Code Walkthrough Projects
+* Credit for Code Walkthrough Projects
+
+## Acknowledgements
+
+I would like to thank my mentor and the Code Institute team and the Slack community.
+
 
 
 
