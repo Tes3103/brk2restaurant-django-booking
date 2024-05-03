@@ -239,7 +239,53 @@ views.py
 
 ![views](static/images/readme/view-booking.png)
 
-## Bugs
+### Bugs
+
+**Bug**|**Solution**|**Status**
+-----|-----|:-----:
+Contact Us not validating correctly|fixed by setting the field to required|fixed
+The deployed project on Heroku not displaying the Bootstrap/CSS styling as implemented in the code|Connect style.css by correcting typo of 'STATIC_DIRS' to 'STATICFILES_DIRS' in settings.py|Fixed
+Auto date and time populating is not working on the booking form|using wiedget and jQuery it populates|Fixed
+The background image was not visible on the deployed page|Seeting the images to load from static links rather than external sources|Fixed
+Profile page was not correctely rendered and visible|adding a background color and setting the detail corerctely in a table|fixed
+
+## Deployment
+
+### Deploying on Heroku
+
+1. Create a Heroku account. 
+2. Once logged in, select create a new app.
+3. Select an app name and region.
+4. Select deployment method by onnecting to github.
+5. Find the desired repo.
+6. Choose the manual deploy or Enable automatic deploys and select the main branch
+7. In the settings tab select reveal config vars. Input the required hidden variables.
+8. Deploy
+
+### Fork The Repository
+1. Access the GitHub repository.
+2. Click on Fork button in the upper right-hand corner.
+3. Edit the repository name and description if desired.
+4. Click the green create fork button.
+
+### Clone The Repository
+1. Go to the GitHub repository
+2. Locate the green Code button above the list of files and click it
+3. Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard
+
+7. Press Enter to create your local clone.
+
+## Credits
+
+### Code
+
+Credit for Daniel Conner for letting and providing basic booking model and form codes from his project 
+
+Credit for Code Walkthrough Projects
+
 
 
 
